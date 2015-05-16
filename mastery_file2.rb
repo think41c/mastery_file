@@ -1,3 +1,4 @@
+# Remember include uri
 require 'open-uri'         
 url = "http://www.gutenberg.org/cache/epub/1342/pg1342.txt"
 ham = "hambone.txt"
@@ -11,6 +12,7 @@ File.open(ham, "w"){|file| file.write(open(url).read)}   # Open the File class, 
 														 # it's going to 'open' the 'url' given and .read it, as it's reading that info at the URL
 														 # it's going to write it as well. Essentially, the url gets read, and written into the 
 														 # hambone.txt file. 
+
 
 doggy = File.open("ham42.txt", "w")                              # Create a blank file.
 # Example of taking a file and extracting only lines divisible by 42.
