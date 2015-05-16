@@ -2,6 +2,8 @@ require 'open-uri'
 url = "http://www.gutenberg.org/cache/epub/1342/pg1342.txt"
 ham = "hambone.txt"
 
+
+
 # if you wanted to read the file at the url: 
 File.open(ham, "w"){|file| file.write(open(url).read)}   # Open the File class, invoke .open, so it knows it's about to read/write, the filename is
 														 # the first parameter, with the (w)rite flag. It takes a block, and |file| is piped in as 
