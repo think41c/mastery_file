@@ -22,6 +22,6 @@ copyz = File.open(ham, "r") do |file|       # Create a File instance, invoke .op
 	  
 	  # Write the file, by appending it to the already created new file, and put in each line into the file thats every 42nd line. 
 	  # File.open("ham42.txt", "a") {|x| x.puts(line) if idx % 42 == 41}    # This is the equivalent of the line below it. 
-	  doggy.puts(line) if idx % 42 == 41
+	  # doggy.puts(line) if idx % 42 == 41
    end 
 end
